@@ -1,0 +1,22 @@
+$TTL 3600
+@ IN SOA ns1.home.arpa. admin.home.arpa. (
+    2021122400  ; Serial
+    3600        ; Refresh
+    1800        ; Retry
+    604800      ; Expire
+    3600        ; Minimum
+)
+
+@                               IN  NS  ns1.home.arpa.
+@                               IN  NS  ns2.home.arpa.
+1.111.168.192.in-addr.arpa.     IN  PTR thinkpad-e470.home.arpa.
+2.111.168.192.in-addr.arpa.     IN  PTR config.home.arpa.
+1.113.168.192.in-addr.arpa.     IN  PTR ns1.home.arpa.
+2.113.168.192.in-addr.arpa.     IN  PTR ns2.home.arpa.
+3.113.168.192.in-addr.arpa.     IN  PTR dns.k8s.home.arpa.
+4.113.168.192.in-addr.arpa.     IN  PTR ns-cache.home.arpa.
+254.111.168.192.in-addr.arpa.   IN  PTR edgerouter-x.home.arpa.
+254.112.168.192.in-addr.arpa.   IN  PTR edgerouter-x.home.arpa.
+254.113.168.192.in-addr.arpa.   IN  PTR edgerouter-x.home.arpa.
+254.114.168.192.in-addr.arpa.   IN  PTR edgerouter-x.home.arpa.
+114.168.192.in-addr.arpa.       IN  NS  dns.k8s.home.arpa.

@@ -1,0 +1,115 @@
+acl home.arpa {
+    192.168.0.0/16;
+    127.0.0.1;
+};
+
+options {
+    directory "/var/cache/bind";
+
+    // If there is a firewall between you and nameservers you want
+    // to talk to, you may need to fix the firewall to allow multiple
+    // ports to talk.  See http://www.kb.cert.org/vuls/id/800113
+
+    // If your ISP provided one or more IP addresses for stable 
+    // nameservers, you probably want to use them as forwarders.  
+    // Uncomment the following block, and insert the addresses replacing 
+    // the all-0's placeholder.
+
+    // forwarders {
+    //  0.0.0.0;
+    // };
+
+    //========================================================================
+    // If BIND logs error messages about the root key being expired,
+    // you will need to update your keys.  See https://www.isc.org/bind-keys
+    //========================================================================
+    dnssec-validation no;
+
+    auth-nxdomain no;    # conform to RFC1035
+    listen-on-v6 { any; };
+
+    recursion no;
+    notify yes;
+
+    also-notify { 192.168.113.2; };
+
+    allow-query { home.arpa; };
+    allow-transfer { 192.168.113.2; };
+    allow-recursion { none; };
+    allow-query-cache { none; };
+};
+
+logging {
+    channel "database-channel" {
+        file "/var/log/bind/database.log" versions 5 size 10M;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+
+    channel "queries-channel" {
+        file "/var/log/bind/queries.log" versions 5 size 10M;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+
+    channel "xfer-out-channel" {
+        file "/var/log/bind/xfer-out.log" versions 5 size 10M;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+
+    channel "notify-channel" {
+        file "/var/log/bind/notify.log" versions 5 size 10M;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+
+    channel "client-channel" {
+        file "/var/log/bind/client.log" versions 5 size 10M;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+
+    channel "network-channel" {
+        file "/var/log/bind/client.log" versions 5 size 10M;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+
+    channel "dispatch-channel" {
+        file "/var/log/bind/dispatch.log" versions 5 size 10M;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+
+    channel "general-channel" {
+        file "/var/log/bind/general.log" versions 5 size 10M;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+
+    category database { "database-channel"; };
+    category queries  { "queries-channel"; };
+    category xfer-out { "xfer-out-channel"; };
+    category notify   { "notify-channel"; };
+    category client   { "client-channel"; };
+    category network  { "network-channel"; };
+    category dispatch { "dispatch-channel"; };
+    category general  { "general-channel"; };
+};

@@ -1,0 +1,22 @@
+$TTL 3600
+@ IN SOA ns1.home.arpa. admin.ns1.home.arpa. (
+    2021122400  ; Serial
+    3600        ; Refresh
+    1800        ; Retry
+    604800      ; Expire
+    3600        ; Negative Cache TTL
+)
+
+@                           IN  NS  ns1.home.arpa.
+@                           IN  NS  ns2.home.arpa.
+thinkpad-e470.home.arpa.    IN  A   192.168.111.1
+config.home.arpa.           IN  A   192.168.111.2
+ns1.home.arpa.              IN  A   192.168.113.1
+ns2.home.arpa.              IN  A   192.168.113.2
+dns.k8s.home.arpa.          IN  A   192.168.113.3
+ns-cache.home.arpa.         IN  A   192.168.113.4
+edgerouter-x.home.arpa.     IN  A   192.168.111.254
+edgerouter-x.home.arpa.     IN  A   192.168.112.254
+edgerouter-x.home.arpa.     IN  A   192.168.113.254
+edgerouter-x.home.arpa.     IN  A   192.168.114.254
+k8s.home.arpa.              IN  NS  dns.k8s.home.arpa.
