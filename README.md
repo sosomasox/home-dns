@@ -1,1 +1,1 @@
-# home-dns
+# 自宅DNS
