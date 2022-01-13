@@ -1,6 +1,6 @@
 $TTL 3600
 @ IN SOA dns.k8s.home.arpa. admin.dns.k8s.home.arpa. (
-    2022011200      ; Serial
+    2022011300      ; Serial
     3600            ; Refresh
     1800            ; Retry
     604800          ; Expire
@@ -22,4 +22,3 @@ node-2.k8s.home.arpa.           IN  A   192.168.114.15
 node-3.k8s.home.arpa.           IN  A   192.168.114.16
 node-4.k8s.home.arpa.           IN  A   192.168.114.17
 node-5.k8s.home.arpa.           IN  A   192.168.114.18
-monitoring.k8s.home.arpa.       IN  A   192.168.114.19
