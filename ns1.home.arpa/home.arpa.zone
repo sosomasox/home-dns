@@ -9,6 +9,7 @@ $TTL 3600
 
 @                           IN  NS  ns1.home.arpa.
 @                           IN  NS  ns2.home.arpa.
+@                           IN  A   192.168.115.253
 thinkpad-e470.home.arpa.    IN  A   192.168.111.1
 config.home.arpa.           IN  A   192.168.111.2
 ns1.home.arpa.              IN  A   192.168.113.1
