@@ -19,3 +19,9 @@ zone "168.192.in-addr.arpa" IN {
     forwarders {};
     file "home.arpa.rev.stub";
 };
+
+zone "k8s" IN {
+    type forward;
+    forward only;
+    forwarders { 192.168.111.2; };
+};
