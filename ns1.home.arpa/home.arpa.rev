@@ -15,7 +15,7 @@ $TTL 3600
 2.113.168.192.in-addr.arpa.     IN  PTR ns2.home.arpa.
 3.113.168.192.in-addr.arpa.     IN  PTR dns.k8s.home.arpa.
 4.113.168.192.in-addr.arpa.     IN  PTR ns-cache.home.arpa.
-253.113.168.192.in-addr.arpa.   IN  PTR tplink-ax5400.home.arpa.
+253.112.168.192.in-addr.arpa.   IN  PTR tplink-ax5400.home.arpa.
 253.111.168.192.in-addr.arpa.   IN  PTR sw111.tl-sg105e.home.arpa.
 253.113.168.192.in-addr.arpa.   IN  PTR sw113.tl-sg105e.home.arpa.
 254.111.168.192.in-addr.arpa.   IN  PTR edgerouter-x.home.arpa.
