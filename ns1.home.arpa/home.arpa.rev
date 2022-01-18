@@ -1,6 +1,6 @@
 $TTL 3600
 @ IN SOA ns1.home.arpa. admin.home.arpa. (
-    2022011600  ; Serial
+    2022011800  ; Serial
     3600        ; Refresh
     1800        ; Retry
     604800      ; Expire
@@ -9,7 +9,6 @@ $TTL 3600
 
 @                               IN  NS  ns1.home.arpa.
 @                               IN  NS  ns2.home.arpa.
-1.111.168.192.in-addr.arpa.     IN  PTR thinkpad-e470.home.arpa.
 2.111.168.192.in-addr.arpa.     IN  PTR config.home.arpa.
 1.113.168.192.in-addr.arpa.     IN  PTR ns1.home.arpa.
 2.113.168.192.in-addr.arpa.     IN  PTR ns2.home.arpa.
