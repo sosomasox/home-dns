@@ -1,6 +1,6 @@
 $TTL 3600
 @ IN SOA ns1.home.arpa. admin.home.arpa. (
-    2022012700  ; Serial
+    2022020300  ; Serial
     3600        ; Refresh
     1800        ; Retry
     604800      ; Expire
@@ -11,6 +11,7 @@ $TTL 3600
 @                               IN  NS  ns2.home.arpa.
 114.168.192.in-addr.arpa.       IN  NS  dns.k8s.home.arpa.
 1.111.168.192.in-addr.arpa.     IN  PTR config.home.arpa.
+1.111.168.192.in-addr.arpa.     IN  PTR proxy.home.arpa.
 1.111.168.192.in-addr.arpa.     IN  PTR monitoring.home.arpa.
 253.111.168.192.in-addr.arpa.   IN  PTR sw111.tl-sg105e.home.arpa.
 254.111.168.192.in-addr.arpa.   IN  PTR edgerouter-x.home.arpa.

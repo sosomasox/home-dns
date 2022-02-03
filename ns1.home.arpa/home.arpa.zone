@@ -1,6 +1,6 @@
 $TTL 3600
 @ IN SOA ns1.home.arpa. admin.ns1.home.arpa. (
-    2022012700  ; Serial
+    2022020300  ; Serial
     3600        ; Refresh
     1800        ; Retry
     604800      ; Expire
@@ -22,4 +22,5 @@ ns-cache.home.arpa.         IN  A     192.168.113.4
 sw113.tl-sg105e.home.arpa.  IN  A     192.168.113.253
 edgerouter-x.home.arpa.     IN  A     192.168.113.254
 edgerouter-x.home.arpa.     IN  A     192.168.114.254
+proxy.home.arpa.            IN  CNAME config.home.arpa.
 monitoring.home.arpa.       IN  CNAME config.home.arpa.
