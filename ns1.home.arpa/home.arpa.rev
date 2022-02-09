@@ -1,6 +1,6 @@
 $TTL 3600
 @ IN SOA ns1.home.arpa. admin.home.arpa. (
-    2022021001  ; Serial
+    2022021002  ; Serial
     3600        ; Refresh
     1800        ; Retry
     604800      ; Expire
@@ -15,15 +15,6 @@ $TTL 3600
 1.111.168.192.in-addr.arpa.     IN  PTR nfs.home.arpa.
 1.111.168.192.in-addr.arpa.     IN  PTR monitoring.home.arpa.
 1.111.168.192.in-addr.arpa.     IN  PTR minio.home.arpa.
-1.111.168.192.in-addr.arpa.     IN  PTR minio-0.home.arpa.
-11.114.168.192.in-addr.arpa.    IN  PTR minio-1.home.arpa.
-12.114.168.192.in-addr.arpa.    IN  PTR minio-2.home.arpa.
-13.114.168.192.in-addr.arpa.    IN  PTR minio-3.home.arpa.
-14.114.168.192.in-addr.arpa.    IN  PTR minio-4.home.arpa.
-15.114.168.192.in-addr.arpa.    IN  PTR minio-5.home.arpa.
-16.114.168.192.in-addr.arpa.    IN  PTR minio-6.home.arpa.
-17.114.168.192.in-addr.arpa.    IN  PTR minio-7.home.arpa.
-18.114.168.192.in-addr.arpa.    IN  PTR minio-8.home.arpa.
 253.111.168.192.in-addr.arpa.   IN  PTR sw111.tl-sg105e.home.arpa.
 254.111.168.192.in-addr.arpa.   IN  PTR edgerouter-x.home.arpa.
 253.112.168.192.in-addr.arpa.   IN  PTR tplink-ax5400.home.arpa.
