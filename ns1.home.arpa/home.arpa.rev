@@ -1,6 +1,6 @@
 $TTL 3600
 @ IN SOA ns1.home.arpa. admin.home.arpa. (
-    2022021700  ; Serial
+    2022021701  ; Serial
     3600        ; Refresh
     1800        ; Retry
     604800      ; Expire
@@ -14,7 +14,6 @@ $TTL 3600
 1.111.168.192.in-addr.arpa.     IN  PTR config.home.arpa.
 1.111.168.192.in-addr.arpa.     IN  PTR grafana.home.arpa.
 1.111.168.192.in-addr.arpa.     IN  PTR minio.home.arpa.
-1.111.168.192.in-addr.arpa.     IN  PTR monitoring.home.arpa.
 1.111.168.192.in-addr.arpa.     IN  PTR prometheus.home.arpa.
 1.111.168.192.in-addr.arpa.     IN  PTR proxy.home.arpa.
 1.111.168.192.in-addr.arpa.     IN  PTR pushgateway.home.arpa.
