@@ -1,6 +1,6 @@
 $TTL 3600
 @ IN SOA ns1.home.arpa. admin.ns1.home.arpa. (
-    2022022201  ; Serial
+    2022022400  ; Serial
     3600        ; Refresh
     1800        ; Retry
     604800      ; Expire
@@ -19,8 +19,8 @@ minio.home.arpa.            IN  A     192.168.111.1
 prometheus.home.arpa.       IN  A     192.168.111.1
 proxy.home.arpa.            IN  A     192.168.111.1
 pushgateway.home.arpa.      IN  A     192.168.111.1
-hv-1.hcloud.home.arpa.      IN  A     192.168.111.11
-hv-2.hcloud.home.arpa.      IN  A     192.168.111.12
+hv-1.pistack.home.arpa.     IN  A     192.168.111.11
+hv-2.pistack.home.arpa.     IN  A     192.168.111.12
 sw111.tl-sg105e.home.arpa.  IN  A     192.168.111.253
 edgerouter-x.home.arpa.     IN  A     192.168.111.254
 tplink-ax5400.home.arpa.    IN  A     192.168.112.253
