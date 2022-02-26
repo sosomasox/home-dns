@@ -1,6 +1,6 @@
 $TTL 3600
 @ IN SOA ns1.home.arpa. admin.home.arpa. (
-    2022022400  ; Serial
+    2022022600  ; Serial
     3600        ; Refresh
     1800        ; Retry
     604800      ; Expire
@@ -21,6 +21,10 @@ $TTL 3600
 1.111.168.192.in-addr.arpa.     IN  PTR pushgateway.home.arpa.
 11.111.168.192.in-addr.arpa.    IN  PTR hv-1.pistack.home.arpa.
 12.111.168.192.in-addr.arpa.    IN  PTR hv-2.pistack.home.arpa.
+13.111.168.192.in-addr.arpa.    IN  PTR hv-3.pistack.home.arpa.
+21.111.168.192.in-addr.arpa.    IN  PTR st-1.pistack.home.arpa.
+22.111.168.192.in-addr.arpa.    IN  PTR st-2.pistack.home.arpa.
+23.111.168.192.in-addr.arpa.    IN  PTR st-3.pistack.home.arpa.
 253.111.168.192.in-addr.arpa.   IN  PTR sw111.tl-sg105e.home.arpa.
 254.111.168.192.in-addr.arpa.   IN  PTR edgerouter-x.home.arpa.
 253.112.168.192.in-addr.arpa.   IN  PTR tplink-ax5400.home.arpa.
