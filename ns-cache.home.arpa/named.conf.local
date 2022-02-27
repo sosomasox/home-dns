@@ -7,15 +7,17 @@
 //include "/etc/bind/zones.rfc1918";
 
 zone "home.arpa" IN {
-    type forward;
-    forward only;
-    forwarders { 192.168.113.1; 192.168.113.2; };
+    type stub;
+    masters { 192.168.113.1; 192.168.113.2; };
+    forwarders {};
+    file "home.arpa.zone.stub";
 };
 
 zone "168.192.in-addr.arpa" IN {
-    type forward;
-    forward only;
-    forwarders { 192.168.113.1; 192.168.113.2; };
+    type stub;
+    masters { 192.168.113.1; 192.168.113.2; };
+    forwarders {};
+    file "home.arpa.rev.stub";
 };
 
 zone "k8s" IN {
