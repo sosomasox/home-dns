@@ -10,6 +10,6 @@ if [ "$?" != "0" ]; then
     sudo cp named.conf.options /etc/bind/named.conf.options
 fi
 
-sudo systemctl restart bind9
+sudo rndc reload
 
 exit 0

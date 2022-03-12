@@ -20,6 +20,6 @@ if [ "$?" != "0" ];then
     sudo cp k8s.home.arpa.rev /var/cache/bind/k8s.home.arpa.rev
 fi
 
-sudo systemctl restart bind9
+sudo rndc reload
 
 exit 0
