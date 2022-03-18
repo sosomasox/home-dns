@@ -1,6 +1,6 @@
 $TTL 3600
 @ IN SOA dns.k8s.home.arpa. admin.dns.k8s.home.arpa. (
-    2022012400      ; Serial
+    2022031800      ; Serial
     3600            ; Refresh
     1800            ; Retry
     604800          ; Expire
@@ -9,19 +9,22 @@ $TTL 3600
 
 @                               IN  NS  dns.k8s.home.arpa.
 dns.k8s.home.arpa.              IN  A   192.168.113.3
+loadbalancer-1.k8s.home.arpa.   IN  A   192.168.114.1
+loadbalancer-2.k8s.home.arpa.   IN  A   192.168.114.2
+loadbalancer-3.k8s.home.arpa.   IN  A   192.168.114.3
 loadbalancer.k8s.home.arpa.     IN  A   192.168.114.10
-loadbalancer-1.k8s.home.arpa.   IN  A   192.168.114.11
-loadbalancer-2.k8s.home.arpa.   IN  A   192.168.114.12
-loadbalancer-3.k8s.home.arpa.   IN  A   192.168.114.13
-etcd-1.k8s.home.arpa.           IN  A   192.168.114.11
-etcd-2.k8s.home.arpa.           IN  A   192.168.114.12
-etcd-3.k8s.home.arpa.           IN  A   192.168.114.13
+etcd-1.k8s.home.arpa.           IN  A   192.168.114.1
+etcd-2.k8s.home.arpa.           IN  A   192.168.114.2
+etcd-3.k8s.home.arpa.           IN  A   192.168.114.3
+control-plane-1.k8s.home.arpa.  IN  A   192.168.114.1
+control-plane-2.k8s.home.arpa.  IN  A   192.168.114.2
+control-plane-3.k8s.home.arpa.  IN  A   192.168.114.3
 control-plane.k8s.home.arpa.    IN  A   192.168.114.10
-control-plane-1.k8s.home.arpa.  IN  A   192.168.114.11
-control-plane-2.k8s.home.arpa.  IN  A   192.168.114.12
-control-plane-3.k8s.home.arpa.  IN  A   192.168.114.13
-node-1.k8s.home.arpa.           IN  A   192.168.114.14
-node-2.k8s.home.arpa.           IN  A   192.168.114.15
-node-3.k8s.home.arpa.           IN  A   192.168.114.16
-node-4.k8s.home.arpa.           IN  A   192.168.114.17
-node-5.k8s.home.arpa.           IN  A   192.168.114.18
+node-1.k8s.home.arpa.           IN  A   192.168.114.11
+node-2.k8s.home.arpa.           IN  A   192.168.114.12
+node-3.k8s.home.arpa.           IN  A   192.168.114.13
+node-4.k8s.home.arpa.           IN  A   192.168.114.14
+node-5.k8s.home.arpa.           IN  A   192.168.114.15
+node-6.k8s.home.arpa.           IN  A   192.168.114.16
+node-7.k8s.home.arpa.           IN  A   192.168.114.17
+node-8.k8s.home.arpa.           IN  A   192.168.114.18
