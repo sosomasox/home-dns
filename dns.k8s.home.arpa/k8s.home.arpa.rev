@@ -26,4 +26,3 @@ $TTL 3600
 15.114.168.192.in-addr.arpa.    IN  PTR node-5.k8s.home.arpa.
 16.114.168.192.in-addr.arpa.    IN  PTR node-6.k8s.home.arpa.
 17.114.168.192.in-addr.arpa.    IN  PTR node-7.k8s.home.arpa.
-18.114.168.192.in-addr.arpa.    IN  PTR node-8.k8s.home.arpa.
