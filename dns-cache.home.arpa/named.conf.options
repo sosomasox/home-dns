@@ -33,8 +33,6 @@ options {
     allow-query { home.arpa; };
     allow-recursion { home.arpa; };
     allow-query-cache { home.arpa; };
-
-    //forwarders { 8.8.8.8; 8.8.4.4; };
 };
 
 statistics-channels {
