@@ -15,5 +15,5 @@ zone "home.arpa" IN {
 zone "k8s.arpa" IN {
     type forward;
     forward only;
-    forwarders { 192.168.115.245; };
+    forwarders { 192.168.115.254; };
 };
