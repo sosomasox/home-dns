@@ -41,7 +41,7 @@ options {
 
 logging {
     channel "database-channel" {
-        file "/var/log/bind/database.log" versions 5 size 10M;
+        file "/var/log/named/database.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -49,7 +49,7 @@ logging {
     };
 
     channel "queries-channel" {
-        file "/var/log/bind/queries.log" versions 5 size 10M;
+        file "/var/log/named/queries.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -57,7 +57,7 @@ logging {
     };
 
     channel "xfer-out-channel" {
-        file "/var/log/bind/xfer-out.log" versions 5 size 10M;
+        file "/var/log/named/xfer-out.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -65,7 +65,7 @@ logging {
     };
 
     channel "notify-channel" {
-        file "/var/log/bind/notify.log" versions 5 size 10M;
+        file "/var/log/named/notify.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -73,7 +73,7 @@ logging {
     };
 
     channel "client-channel" {
-        file "/var/log/bind/client.log" versions 5 size 10M;
+        file "/var/log/named/client.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -81,7 +81,7 @@ logging {
     };
 
     channel "network-channel" {
-        file "/var/log/bind/client.log" versions 5 size 10M;
+        file "/var/log/named/client.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -89,7 +89,7 @@ logging {
     };
 
     channel "dispatch-channel" {
-        file "/var/log/bind/dispatch.log" versions 5 size 10M;
+        file "/var/log/named/dispatch.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -97,7 +97,7 @@ logging {
     };
 
     channel "general-channel" {
-        file "/var/log/bind/general.log" versions 5 size 10M;
+        file "/var/log/named/general.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;

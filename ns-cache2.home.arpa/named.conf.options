@@ -28,20 +28,18 @@ options {
     auth-nxdomain no;    # conform to RFC1035
     listen-on-v6 { any; };
 
-    recursion no;
-    notify no;
-
-    also-notify { none; };
+    recursion yes;
 
     allow-query { home.arpa; };
-    allow-transfer { none; };
-    allow-recursion { none; };
-    allow-query-cache { none; };
+    allow-recursion { home.arpa; };
+    allow-query-cache { home.arpa; };
+
+    forwarders { 8.8.8.8; 8.8.4.4; };
 };
 
 logging {
     channel "database-channel" {
-        file "/var/log/bind/database.log" versions 5 size 10M;
+        file "/var/log/named/database.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -49,7 +47,15 @@ logging {
     };
 
     channel "queries-channel" {
-        file "/var/log/bind/queries.log" versions 5 size 10M;
+        file "/var/log/named/queries.log" versions 5 size 10M;
+        severity info;
+        print-time yes;
+        print-severity yes;
+        print-category yes;
+    };
+
+    channel "resolver-channel" {
+        file "/var/log/named/resolver.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -57,7 +63,7 @@ logging {
     };
 
     channel "client-channel" {
-        file "/var/log/bind/client.log" versions 5 size 10M;
+        file "/var/log/named/client.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -65,7 +71,7 @@ logging {
     };
 
     channel "network-channel" {
-        file "/var/log/bind/client.log" versions 5 size 10M;
+        file "/var/log/named/client.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -73,7 +79,7 @@ logging {
     };
 
     channel "dispatch-channel" {
-        file "/var/log/bind/dispatch.log" versions 5 size 10M;
+        file "/var/log/named/dispatch.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -81,7 +87,7 @@ logging {
     };
 
     channel "general-channel" {
-        file "/var/log/bind/general.log" versions 5 size 10M;
+        file "/var/log/named/general.log" versions 5 size 10M;
         severity info;
         print-time yes;
         print-severity yes;
@@ -90,6 +96,7 @@ logging {
 
     category database { "database-channel"; };
     category queries  { "queries-channel"; };
+    category resolver { "resolver-channel"; };
     category client   { "client-channel"; };
     category network  { "network-channel"; };
     category dispatch { "dispatch-channel"; };
