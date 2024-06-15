@@ -1,6 +1,6 @@
 $TTL 3600
 @ IN SOA ns1.home.arpa. admin.home.arpa. (
-    2023010300  ; Serial
+    2024061500  ; Serial
     3600        ; Refresh
     1800        ; Retry
     604800      ; Expire
@@ -17,5 +17,4 @@ $TTL 3600
 2.113.168.192.in-addr.arpa.     IN  PTR ns2.home.arpa.
 3.113.168.192.in-addr.arpa.     IN  PTR ns-cache1.home.arpa.
 4.113.168.192.in-addr.arpa.     IN  PTR ns-cache2.home.arpa.
-1.111.168.192.in-addr.arpa.     IN  PTR monitoring.home.arpa.
-11.111.168.192.in-addr.arpa.    IN  PTR elitemini-b550.home.arpa.
+1.111.168.192.in-addr.arpa.     IN  PTR config.home.arpa.
