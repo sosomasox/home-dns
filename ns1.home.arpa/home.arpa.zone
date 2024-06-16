@@ -1,6 +1,6 @@
 $TTL 3600
 @ IN SOA ns1.home.arpa. admin.ns1.home.arpa. (
-    2023061500  ; Serial
+    2023061600  ; Serial
     3600        ; Refresh
     1800        ; Retry
     604800      ; Expire
@@ -18,3 +18,5 @@ ns2.home.arpa.              IN  A     192.168.113.2
 ns-cache1.home.arpa.        IN  A     192.168.113.3
 ns-cache2.home.arpa.        IN  A     192.168.113.4
 config.home.arpa.           IN  A     192.168.111.1
+raspi1.home.arpa.           IN  A     192.168.114.1
+raspi2.home.arpa.           IN  A     192.168.114.2
